@@ -10,14 +10,19 @@ import { FooterComponent } from './uiparts/footer.component';
 import { HomeComponent } from './pages/home.component';
 import { AboutComponent } from './pages/about.component';
 import { NotFoundComponent } from './pages/not-found.component';
-import { TextCharSumComponent } from './text-char-sum.component';
-import { TextRotComponent } from './text-rot.component';
+import { TextCharSumComponent } from './pages/tools/text-char-sum.component';
+import { TextRotComponent } from './pages/tools/text-rot.component';
 
 // routes
 const appRoutes: Routes = [
+  // Normal pages
   { path: "", component: HomeComponent },
   { path: "about", component: AboutComponent },
   { path: "about/about", component: AboutComponent },
+  // Tools
+  { path: "tool/buchstabenwert", component: TextCharSumComponent },
+  { path: "tool/rot", component: TextRotComponent },
+  // Error Pages
   { path: '404', component: NotFoundComponent },
   { path: '**', redirectTo: '/404' }
 
