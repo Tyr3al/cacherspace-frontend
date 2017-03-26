@@ -10,7 +10,7 @@ export class TextCharSumComponent implements OnInit {
   input = {
     text: "",
     optNumbers: true,
-    optUmlaut: true,
+    optUmlaut: false,
     optSingleDigitSum: false,
   }
 
