@@ -12,6 +12,7 @@ import { AboutComponent } from './pages/about.component';
 import { NotFoundComponent } from './pages/not-found.component';
 import { TextCharSumComponent } from './pages/tools/text-char-sum.component';
 import { TextRotComponent } from './pages/tools/text-rot.component';
+import { ToolComponent } from './pages/tool.component';
 
 // routes
 const appRoutes: Routes = [
@@ -20,8 +21,9 @@ const appRoutes: Routes = [
   { path: "about", component: AboutComponent },
   { path: "about/about", component: AboutComponent },
   // Tools
-  { path: "tool/buchstabenwert", component: TextCharSumComponent },
-  { path: "tool/rot", component: TextRotComponent },
+  { path: "tools", component: ToolComponent},
+  { path: "tools/buchstabenwert", component: TextCharSumComponent },
+  { path: "tools/rot", component: TextRotComponent },
   // Error Pages
   { path: '404', component: NotFoundComponent },
   { path: '**', redirectTo: '/404' }
@@ -38,6 +40,7 @@ const appRoutes: Routes = [
     NotFoundComponent,
     TextCharSumComponent,
     TextRotComponent,
+    ToolComponent,
   ],
   imports: [
     BrowserModule,
