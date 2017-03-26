@@ -126,19 +126,19 @@
           <td>24</td>
           <td>25</td>
           <td>26</td>
-          <td ng-show="!inputModel.optUmlaut">27</td>
-          <td ng-show="!inputModel.optUmlaut">28</td>
-          <td ng-show="!inputModel.optUmlaut">29</td>
-          <td ng-show="!inputModel.optUmlaut">30</td>
-          <td ng-show="inputModel.optUmlaut">6</td>
-          <td ng-show="inputModel.optUmlaut">20</td>
-          <td ng-show="inputModel.optUmlaut">26</td>
-          <td ng-show="inputModel.optUmlaut">38</td>
+          <td [class.hidden]="input.optUmlaut">27</td>
+          <td [class.hidden]="input.optUmlaut">28</td>
+          <td [class.hidden]="input.optUmlaut">29</td>
+          <td [class.hidden]="input.optUmlaut">30</td>
+          <td [class.hidden]="!input.optUmlaut">6</td>
+          <td [class.hidden]="!input.optUmlaut">20</td>
+          <td [class.hidden]="!input.optUmlaut">26</td>
+          <td [class.hidden]="!input.optUmlaut">38</td>
         </tr>
       </table>
     </div>
     <div class="col-sm-6">
-      <table ng-show="inputModel.optNumbers" class="table table-striped table-responsive">
+      <table [class.hidden]="!input.optNumbers" class="table table-striped table-responsive">
         <tr>
           <th>0</th>
           <th>1</th>
