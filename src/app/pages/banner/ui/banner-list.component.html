@@ -1,0 +1,18 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>GC Code</th>
+      <th>Name</th>
+      <th>Owner</th>
+      <th>Aufrufe</th>
+      <th>Einbinden</th>
+    </tr>
+  </thead>
+<tr *ngFor="let banner of banners">
+  <td>{{banner.id}}</td>
+  <td><a href="https://coord.info/{{banner.id}}" target="_blank">{{banner.name}}</a></td>
+  <td>{{banner.owner}}</td>
+  <td>{{banner.counter}}</td>
+  <td>link</td>
+</tr>
+</table>

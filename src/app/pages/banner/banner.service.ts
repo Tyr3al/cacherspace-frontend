@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Banner } from './banner';
 
 @Injectable()
-export class BannerServiceService {
+export class BannerService {
 
   constructor() { }
 
