@@ -14,9 +14,9 @@
       <ul class="nav navbar-nav">
         <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a [routerLink]="['/']">Home</a></li>
         <li class="dropdown" routerLinkActive="active">
-          <a [routerLink]="['bannerdb']" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Banner DB<span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Banner DB<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="bannerdb">Übersicht</a></li>
+             <li routerLinkActive="active"><a [routerLink]="['banner']">Übersicht</a></li>
             <li><a href="bannerdb/add">Banner einreichen</a></li>
           </ul>
         </li>

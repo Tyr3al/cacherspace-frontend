@@ -13,6 +13,7 @@ import { NotFoundComponent } from './pages/not-found.component';
 import { TextCharSumComponent } from './pages/tools/text-char-sum.component';
 import { TextRotComponent } from './pages/tools/text-rot.component';
 import { ToolComponent } from './pages/tool.component';
+import { BannerListComponent } from './pages/banner/banner-list.component';
 
 // routes
 const appRoutes: Routes = [
@@ -20,6 +21,8 @@ const appRoutes: Routes = [
   { path: "", component: HomeComponent },
   { path: "about", component: AboutComponent },
   { path: "about/about", component: AboutComponent },
+  // Banner
+  { path:"banner", component: BannerListComponent },
   // Tools
   { path: "tools", component: ToolComponent},
   { path: "tools/buchstabenwert", component: TextCharSumComponent },
@@ -41,6 +44,7 @@ const appRoutes: Routes = [
     TextCharSumComponent,
     TextRotComponent,
     ToolComponent,
+    BannerListComponent,
   ],
   imports: [
     BrowserModule,
