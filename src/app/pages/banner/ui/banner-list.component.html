@@ -8,11 +8,19 @@
       <th>Einbinden</th>
     </tr>
   </thead>
-<tr *ngFor="let banner of banners">
-  <td>{{banner.id}}</td>
-  <td><a href="https://coord.info/{{banner.id}}" target="_blank">{{banner.name}}</a></td>
-  <td>{{banner.owner}}</td>
-  <td class="columLeft">{{banner.counter}}</td>
-  <td>link</td>
-</tr>
+  <tr *ngFor="let banner of banners">
+    <td>{{banner.id}}</td>
+    <td><a href="https://coord.info/{{banner.id}}" target="_blank">{{banner.name}}</a></td>
+    <td>{{banner.owner}}</td>
+    <td class="columLeft">{{banner.counter}}</td>
+    <td>link</td>
+  </tr>
 </table>
+
+<div class="text-center">
+  <ul class="pagination">
+    <li><a href="#"><</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">></a></li>
+  </ul>
+</div>
