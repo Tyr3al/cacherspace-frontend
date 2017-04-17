@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule, Routes} from '@angular/router';
+import { RouterModule, Routes, ActivatedRoute} from '@angular/router';
 
 // components
 import { AppComponent } from './app.component';
@@ -16,6 +16,7 @@ import { TextRotComponent } from './pages/tools/text-rot.component';
 import { ToolComponent } from './pages/tool.component';
 import { BannerOverviewComponent } from './pages/banner/banner-overview.component';
 import { BannerListComponent } from './pages/banner/ui/banner-list.component';
+import { BannerIncludeComponent } from './pages/banner/banner-include.component';
 
 // services
 import { BannerService } from './pages/banner/banner.service';
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
   { path: 'about/about', component: AboutComponent },
   // Banner
   { path: 'banner', component: BannerOverviewComponent },
+  { path: 'banner/:id', component: BannerIncludeComponent },
   // Tools
   { path: 'tools', component: ToolComponent},
   { path: 'tools/buchstabenwert', component: TextCharSumComponent },
@@ -50,6 +52,7 @@ const appRoutes: Routes = [
     ToolComponent,
     BannerOverviewComponent,
     BannerListComponent,
+    BannerIncludeComponent,
   ],
   imports: [
     BrowserModule,
