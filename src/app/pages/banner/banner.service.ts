@@ -6,6 +6,7 @@ export class BannerService {
 
   constructor() { }
 
+  // get all caches
   getAll(): Banner[] {
     return [
       { id: 'GC123A4', name: 'Cache 1 - Der erste Cache', kind: 'Tradi', owner: 'Cacher Nummer 1', text: 'Noch etwas extra Text', counter: 12 },
@@ -16,5 +17,11 @@ export class BannerService {
       { id: 'GC7DA34', name: 'Cache 6 - Der sechste Cache', kind: 'Tradi', owner: 'Cacher Nummer 6', text: 'Noch etwas extra Text', counter: 80234 },
     ];
   }
+
+  // get single cache by id
+  getCache(gcCode: string): Banner {
+    return { id: 'GC123A4', name: 'Cache 1 - Der erste Cache', kind: 'Tradi', owner: 'Cacher Nummer 1', text: 'Noch etwas extra Text', counter: 12 };
+  }
+
 
 }
